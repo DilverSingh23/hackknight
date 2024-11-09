@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Search for the Right Doctor</title>
+   <link rel="stylesheet" href="search.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="script.js"></script>
+</head>
+<body>
+    <div class = "navbar">
+        <div class = "title">
+            <div class = "left">
+                <a href = "index.html"><img src = "images/docdiscoverylogo__1_-removebg-preview.png"></a>
+                <a href = "index.html"><h1 class = "first-part">Doc</h1></a>
+                <a href = "index.html"><h1 class = "second-part">Discovery</h1></a>
+              </div>
+        </div>
+      </div>
+    <div class="form-container" id = "form-container">
+        <select id="docType" name="docType" required>
+            <option value="" disabled selected>Select type of doctor...</option>
+            <option value="Anesthesiologist">Anesthesiologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Endocrinologist">Endocrinologist</option>
+            <option value="Physician">Physician</option>
+            <option value="Gastroenterologist">Gastroenterologist</option>
+            <option value="Hematologist">Hematologist</option>
+            <option value="Nephrologist">Nephrologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Gynecologist">Gynecologist</option>
+            <option value="Oncologist">Oncologist</option>
+            <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+            <option value="Pediatrician">Pediatrician</option>
+            <option value="Psychiatrist">Psychiatrist</option>
+            <option value="Pulmonologist">Pulmonologist</option>
+            <option value="Immunologist">Immunologist</option>
+            <option value="Radiologist">Radiologist</option>
+            <option value="Rheumatologist">Rheumatologist</option>
+            <option value="Urologist">Urologist</option>
+            <option value="Surgeon">Surgeon</option>
+        </select>
+        
+        <input type="text" id="zipCode" placeholder="Enter ZIP code..." required> 
+        
+        <select id="insuranceType" name="insuranceType" required>
+            <option value="" disabled selected>Select your insurance type...</option>
+            <option value="Aetna">Aetna</option>
+            <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
+            <option value="Cigna">Cigna</option>
+            <option value="Humana">Humana</option>
+            <option value="Kaiser Permanente">Kaiser Permanente</option>
+            <option value="UnitedHealthcare">UnitedHealthcare</option>
+            <option value="Medicare">Medicare</option>
+            <option value="Medicaid">Medicaid</option>
+            <option value="Tricare">Tricare</option>
+            <option value="Anthem">Anthem</option>
+            <option value="Health Net">Health Net</option>
+            <option value="Molina Healthcare">Molina Healthcare</option>
+        </select>
+        <input type="text" id="specificSymptoms" placeholder="Enter any specific symptoms...">
+        <div class="searchButton">
+            <button onclick="search()">SEARCH</button>
+        </div>
+        <div id="results"></div>
+    </div>
+
+
+    
+    <footer>
+      <div class="bottom" id = "bottom">
+        <h2>&copy; 2024 DocDiscovery  </h2>
+        <h2> Phone: (123) 456-7890 </h2>
+        <h2> Gmail: johndoe@gmail.com </h2>
+        <h2> Hack Knight 2024 </h2>
+      </div>
+    </footer>
+
+
+</body>
+</html>
+
