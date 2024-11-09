@@ -182,7 +182,27 @@ select {
 .counter {
     color: black;
     font-size: 20px;
-  }
+}
+
+.select {
+    font-family: "Nunito Sans", sans-serif;
+    background: #4169E1;
+    border: 2px solid hsl(225, 73%, 57%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.3s ease;
+    border-radius: 2em;
+}
+
+
+.select:hover {
+    border: 2px solid #4169E1;
+    color: #4169E1;
+    background-color: white;
+    opacity: 0.8;
+}
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
