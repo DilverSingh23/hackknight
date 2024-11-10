@@ -1,4 +1,5 @@
-#⚕ DocDiscovery ⚕
+⚕ DocDiscovery ⚕
+
 🛡️ Project created for Hack Knight Hackathon Fall 2024 🛡️
 
 Video Demo: https://youtu.be/2buKjjW0kuM
