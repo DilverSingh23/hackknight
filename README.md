@@ -1,27 +1,42 @@
-⚕ DocDiscovery ⚕
+# ⚕️ DocDiscovery ⚕️  
+**Project created for Hack Knight Hackathon, Fall 2024**
+
+### 👥 Team Members
+- **Sharif Ali** - Front-end
+- **Jaskaran Bhogal** - Front-end
+- **Alfred Siby Cyriac** - Full-stack
+- **Dilver Singh** - Full-stack  
+*All team members were first-time hackers!*
+
+### 📽️ Demo & DevPost
+- [Video Demo](https://youtu.be/2buKjjW0kuM)
+- [DevPost Submission](https://devpost.com/software/docdiscovery)
+
+---
+
+### 🤔 About DocDiscovery
+DocDiscovery helps users find doctors tailored to their needs. Users provide:
+1. **Doctor Type**
+2. **Zip Code**
+3. **Insurance Type**
+4. **Symptoms**
+
+The program returns a collection of matching doctors, with a Tinder-like swiping feature for users to favorite or remove doctors. Users ultimately receive a list of their favorited doctors to choose their best fit. Once a doctor is selected, only their information remains displayed.
+
+### 💻 Tech Stack
+DocDiscovery was built with **HTML5**, **CSS3**, and **Vanilla JavaScript**. Due to time constraints and the team's limited experience with Next.js, we opted for a more straightforward approach so everyone could contribute.
+
+1. **Client Side**: Collects user inputs and sends them to the server.
+2. **Server Side**: Searches the database for matching doctors based on doctor type, zip code, insurance, and symptoms. Results are passed back to the client for display.
+
+### 🚀 Challenges We Overcame
+- **API Limitations**: Finding a single API with our search criteria was tough, so we merged data from two APIs.
+- **Database Choice**: Without MongoDB experience, we used **Google Sheets** as our database. We populated the sheet with data from the APIs via **Google Apps Script** and connected it to our JavaScript file.
+
+---
+
+### 📅 Last Updated
+*November 10, 2024*
 
 
-🛡️ Project created for Hack Knight Hackathon Fall 2024 🛡️
 
-👥 Group Members: Sharif Ali (front-end), Jaskaran Bhogal (front-end), Alfred Siby Cyriac (full-stack), Dilver Singh (Full Stack)
-
-👾 All team members were first time hackers 
-
-Video Demo: https://youtu.be/2buKjjW0kuM
-
-Dev Post: https://devpost.com/software/docdiscovery
-
-
-🤔 What does DocDiscovery do?
-
-A user enters the type of doctor they need, their personal zip code, insurance type, and specific symptoms. The program then returns a collection of the best doctors for them. These cards have a tinder like matching mechanism where user selects whether to favorite a doctor or remove them from the collection. Ultimately, the user is presented with all their favorited cards and can select their best fit doctor. Once a doctor is selected, it removes all other doctors and simply displays all information of your selected doctor.
-
-🤔 How was DocDiscovery built (tech stack)? 
-
-We wanted to use a flashier tech stack, but due to our limited knowledge on certain functionalities in a technology like Next.js we opted to go very plain and old school route with html5, cc3, and vanilla javascript -- this way we were all able to actively contribute. Ultimately, the program requires a user to fill in 4 required fields which are doctor type, zip code, insurance type, and any specific symptoms. These values get stored in variables that become an object and passed onto our server side. On the server side the script iterates throughout all active rows in the database and finds rows that match doctor type and insurance type exactly and searches for the closest match in zip code and doctors who specialize in the users inputted symptoms. All the rows that are best fit for the user are stored into an array that get passed back to the client side code and that data is then used to be display.
-
-🤔 Challenges faced in the process? 
-
-We had difficulty finding the proper API that contained all the required criteria we needed for a search result thus we had to merge 2 APIs into one database. We also didn't have prior experience with the more popular databases such as MongoDB so we opted for a more unique approach and used Google Sheets as our database and used Google App Script to pull data from 2 APIs, populate our spreadsheet, then connected our local javascript file to API deployment of the App Script.
-
-ℹ️ Code last updated: November 10, 2024
