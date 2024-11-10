@@ -10,8 +10,7 @@ function search() {
         return;
     }
 
-    // Replace 'YOUR_WEB_APP_URL' with the actual URL of your deployed Google Apps Script
-    const url = `https://script.google.com/macros/s/AKfycbwV5lQK_NGwWf5v2V26k2hSBcetwgHS4-0BkSfrp9-1PpUbrT1AoO-IqNmSdaogLelOhg/exec?docType=${encodeURIComponent(docType)}&zipCode=${encodeURIComponent(zipCode)}&insuranceType=${encodeURIComponent(insuranceType)}`;
+    const url = `app-script-url?docType=${encodeURIComponent(docType)}&zipCode=${encodeURIComponent(zipCode)}&insuranceType=${encodeURIComponent(insuranceType)}`;
 
     fetch(url)
         .then(response => response.json())
