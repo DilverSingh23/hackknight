@@ -1,5 +1,5 @@
 # ⚕️ DocDiscovery ⚕️  
-**Project created for Hack Knight Hackathon, Fall 2024**
+**Project created for HackKnight Hackathon, Fall 2024**
 
 ### 👥 Team Members
 - **Sharif Ali** - Front-end
